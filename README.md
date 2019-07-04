@@ -18,7 +18,7 @@ Color  | Intro Task | Use Case + UI | Class Diagram | Version 1 | Version 2 | Fi
 Blue   |     +      |       -       |       -       |     -     |     -     |  -   
 Red    |     +      |       -       |       -       |     -     |     -     |  -   
 Green  |     +      |       -       |       -       |     -     |     -     |  -   
-Yellow |     -      |       -       |       -       |     -     |     -     |  -   
+Yellow |     +      |       -       |       -       |     -     |     -     |  -   
 Orange |     -      |       -       |       -       |     -     |     -     |  -   
 White  |     -      |       -       |       -       |     -     |     -     |  -   
 
