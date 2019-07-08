@@ -31,7 +31,6 @@ public class Puzzle {
                 num++;
             }
         }
-
         blank = new TilePos(3,3);
     }
 
@@ -56,6 +55,7 @@ public class Puzzle {
 
     public void setTiles(int[][] tiles) {
         this.tiles = tiles;
+        this.blank = whereIs(15);
     }
 
     public List<TilePos> allTilePos() {
@@ -74,7 +74,7 @@ public class Puzzle {
     }
 
     public TilePos getBlank() {
-        return blank;
+        return whereIs(15);
     }
 
     @Override
@@ -122,6 +122,9 @@ public class Puzzle {
     }
 
     public boolean isValidMove(TilePos p) {
+        if (p == null) {
+            return false;
+        }
         if( ( p.x < 0) || (p.x >= 4) ) {
             return false;
         }
