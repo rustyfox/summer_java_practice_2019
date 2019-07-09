@@ -139,7 +139,18 @@ public class Wrap {
     }
 
     public static boolean isSolved() {
-        if (puzzle.isSolved()) {
+        int[][] buff = new int[4][4];
+            int n = 0;
+            int[] s = states.get(currentState);
+            for (int i = 0; i < 4; i++) {
+                for (int j = 0; j < 4; j++) {
+                    buff[i][j] = s[n];
+                    n++;
+                }
+            }
+        Puzzle test = new Puzzle();
+        test.setTiles(buff);
+        if (test.isSolved()) {
             solution.clear();
             solution = null;
             return true;
